@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A bilingual IT documentation search demo with traceable answers.">
+  <title>IT Docs Search</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="./" aria-label="IT Docs Search"><span class="brand-icon" aria-hidden="true">▤</span> IT Docs Search</a>
+      <div class="top-actions">
+        <a id="repository" href="https://github.com/radusquinho/it-docs-search">GitHub <span aria-hidden="true">↗</span></a>
+        <label class="sr-only" for="language" id="language-label">Language</label>
+        <select id="language"><option value="en">EN</option><option value="es">ES</option></select>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <h1 id="heading">Find an answer.<br>Check the source.</h1>
+      <p id="subtitle">Search ten fictional IT guides in English or Spanish and see the documentation behind each answer.</p>
+    </section>
+    <div class="workbench">
+      <section class="workspace" aria-labelledby="question-label">
+        <form id="ask-form">
+          <label id="question-label" for="question">Your question</label>
+          <div class="input-row">
+            <input id="question" type="search" maxlength="350" required placeholder="How do I restore a deleted file?">
+            <button type="submit" id="submit">Search <span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+        <div class="examples" id="examples"></div>
+        <div class="answer">
+          <div class="answer-head">
+            <h2 id="result-label">Answer</h2>
+            <span id="mode-label" class="mode">Guide excerpts</span>
+          </div>
+          <div id="result" aria-live="polite" aria-atomic="true"></div>
+        </div>
+        <div id="local-settings" hidden>
+          <label><input id="use-model" type="checkbox"> <span id="model-label">Use local AI (Ollama)</span></label>
+        </div>
+      </section>
+      <aside class="library" aria-labelledby="library-label">
+        <h2 id="library-label">Source library</h2>
+        <ol id="guide-list"></ol>
+      </aside>
+    </div>
+  </main>
+  <dialog id="source-dialog" aria-labelledby="source-title">
+    <div class="dialog-head">
+      <span id="source-group"></span>
+      <form method="dialog"><button id="close-source" type="submit" aria-label="Close">×</button></form>
+    </div>
+    <h2 id="source-title"></h2>
+    <ol id="source-steps"></ol>
+  </dialog>
+</body>
+</html>

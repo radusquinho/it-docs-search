@@ -1,0 +1,22 @@
+[
+  { "id": "01", "language": "en", "question": "When does my password recovery link expire?", "sources": ["password"], "facts": [["15 minutes"]] },
+  { "id": "02", "language": "es", "question": "¿Cuántos caracteres necesito para una contraseña nueva?", "sources": ["password"], "facts": [["14 caracteres"]] },
+  { "id": "03", "language": "en", "question": "How should I test the authenticator on a replacement phone?", "sources": ["mfa"], "facts": [["test sign-in", "test the sign-in"], ["old phone"]] },
+  { "id": "04", "language": "es", "question": "¿Cómo accedo al portal interno desde casa?", "sources": ["vpn"], "facts": [["Office Remote"], ["segundo factor"]] },
+  { "id": "05", "language": "en", "question": "What do visitors need to get onto the guest network?", "sources": ["wifi"], "facts": [["Office Guest"], ["reception"]] },
+  { "id": "06", "language": "es", "question": "¿Durante cuánto tiempo se conserva un archivo borrado?", "sources": ["backup"], "facts": [["30 días"]] },
+  { "id": "07", "language": "en", "question": "What should I leave unchecked when clearing temporary files?", "sources": ["storage"], "facts": [["Downloads"]] },
+  { "id": "08", "language": "es", "question": "¿Qué hago si se atasca un trabajo en la cola de impresión?", "sources": ["printing"], "facts": [["propio trabajo", "tu trabajo"], ["página de prueba"]] },
+  { "id": "09", "language": "en", "question": "When should I restart after installing patches?", "sources": ["updates"], "facts": [["outside your active hours", "outside active hours"]] },
+  { "id": "10", "language": "es", "question": "¿Qué compruebo si no aparece la cámara de la videollamada?", "sources": ["meetings"], "facts": [["otras aplicaciones", "otros programas"], ["permite el acceso", "permisos", "permiso"]] },
+  { "id": "11", "language": "en", "question": "What equipment do I hand back when leaving the company?", "sources": ["handover"], "facts": [["laptop"], ["charger"], ["badge"]] },
+  { "id": "12", "language": "es", "question": "¿Cómo me conecto a la VPN y paso el autenticador a otro móvil?", "sources": ["mfa", "vpn"], "facts": [["Office Remote"], ["código QR"]] },
+  { "id": "13", "language": "en", "question": "How do I clear disk space and restore a deleted file?", "sources": ["backup", "storage"], "facts": [["recycle bin"], ["temporary files"]] },
+  { "id": "14", "language": "es", "question": "¿Dónde compruebo las actualizaciones y cómo pruebo el micrófono?", "sources": ["meetings", "updates"], "facts": [["Windows Update", "historial"], ["llamada de prueba"]] },
+  { "id": "15", "language": "en", "question": "Who approves travel expenses?", "sources": [], "facts": [] },
+  { "id": "16", "language": "es", "question": "¿Cuál es el código del aparcamiento?", "sources": [], "facts": [] },
+  { "id": "17", "language": "en", "question": "Which menu do I use to link the app that gives me one-time codes?", "sources": ["mfa"], "facts": [["Add sign-in method"]] },
+  { "id": "18", "language": "es", "question": "¿Cómo configuro una impresora 3D que acabo de comprar?", "sources": [], "facts": [] },
+  { "id": "19", "language": "en", "question": "What do I send support if the print queue is still paused?", "sources": ["printing"], "facts": [["printer name"], ["time"]] },
+  { "id": "20", "language": "es", "question": "¿Qué hago para acceder a una versión anterior desde el historial de versiones?", "sources": ["backup"], "facts": [["historial de versiones"], ["restaura la versión", "restaurar la versión"]] }
+]
